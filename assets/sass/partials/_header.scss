@@ -1,0 +1,226 @@
+.header {
+  nav {
+    height: 10rem;
+  }
+  .logo {
+    width: 13.3rem;
+    height: 4.65rem;
+    &:hover {
+      color: $text;
+    }
+  }
+
+  .hamburger {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: none;
+    .hamburger_icon {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: $heading;
+      position: relative;
+      transition: 0.3s ease-in-out;
+      &::after,
+      &::before {
+        content: "";
+        width: $full_width;
+        height: $full_height;
+        background-color: $heading;
+        position: absolute;
+        left: 0;
+        top: 6px;
+        transition: 0.3s ease-in-out;
+      }
+      &::before {
+        top: -6px;
+      }
+    }
+    .close {
+      background: transparent;
+      transition: 0.3s ease-in-out;
+    }
+    .close::after {
+      transform: rotate(45deg);
+      top: 0;
+      transition: 0.3s ease-in-out;
+    }
+    .close::before {
+      transform: rotate(-45deg);
+      top: 0;
+      transition: 0.3s ease-in-out;
+    }
+  }
+  .menu_links {
+    a {
+      font-size: $font_small;
+      color: $heading;
+      padding: 0 1.6rem;
+      line-height: 2.72rem;
+      transition: 0.5s ease-in-out;
+      &:hover {
+        color: $orange;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+  }
+}
+.hero {
+  //height: calc(100vh - 10rem);
+  background: linear-gradient(
+    256.24deg,
+    rgba(255, 195, 152, 0.2) 26.56%,
+    rgba(255, 234, 190, 0.3) 100%
+  );
+  position: relative;
+  .hero_content {
+    .hero_text {
+      flex: 1.6;
+      padding: 10rem 0;
+      animation: hero_text 1500ms ease-in-out;
+      background: transparent;
+      .subtitle {
+        margin: 2rem 0 5rem;
+        padding-right: 7rem;
+      }
+    }
+    .hero_img {
+      flex: 1;
+      position: relative;
+      animation: hero_img 1000ms ease-in-out;
+      animation-delay: 1000ms;
+     
+      hr {
+        height: 3px;
+        opacity: 1;
+        z-index: -1;
+        position: absolute;
+        transform: rotate(40deg);
+        &:nth-child(2) {
+          color: $orange;
+          position: absolute;
+          top: 26%;
+          left: 55%;
+          width: 50%;
+        }
+        &:nth-child(3) {
+          color: $heading;
+          top: 33%;
+          left: 63%;
+          width: 32%;
+        }
+        &:nth-child(4) {
+          color: $orange;
+          top: 50%;
+          left: 85%;
+          width: 20%;
+        }
+        &:nth-child(5) {
+          color: $heading;
+          top: 24%;
+          left: 13%;
+          width: 55%;
+        }
+        &:nth-child(6) {
+          color: $heading;
+          top: 50%;
+          left: 72%;
+          width: 20%;
+        }
+
+        &:nth-child(7) {
+          color: $orange;
+          top: 25%;
+          left: 13%;
+          width: 34%;
+        }
+        &:nth-child(8) {
+          color: $heading;
+          top: 24%;
+          left: 0%;
+          width: 33%;
+        }
+        &:nth-child(9) {
+          color: $orange;
+          top: 57%;
+          left: 60%;
+          width: 40%;
+        }
+        &:nth-child(10) {
+          color: $orange;
+          top: 43%;
+          left: 8%;
+          width: 30%;
+        }
+        &:nth-child(11) {
+          color: $heading;
+          top: 46%;
+          left: 11%;
+          width: 10%;
+        }
+        &:nth-child(12) {
+          color: $heading;
+          top: 56%;
+          left: 25%;
+          width: 20%;
+        }
+        &:nth-child(13) {
+          color: $heading;
+          top: 54%;
+          left: 14%;
+          width: 14%;
+        }
+      }
+      img {
+        z-index: 1;
+       
+      }
+    }
+  }
+  .frame1{
+    width: 11.3rem;
+    height: 11.4rem;
+    position: absolute;
+    top: 5%;
+    left: 4%;
+  }
+  .frame2{
+    width: 4rem;
+    height: 4.5rem;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+  }
+  .frame3{
+    width: 10.1rem;
+    height: 10.1rem;
+    position: absolute;
+    top:82%;
+    left: 32%;
+  }
+}
+@keyframes hero_text {
+  0%{
+   transform: translateX(-1000%); 
+  }
+  100%{
+    transform: translateX(0); 
+  }
+}
+@keyframes hero_img {
+  0%{
+   transform: translateY(-100%); 
+  }
+  100%{
+    transform: translateY(0); 
+  }
+}
