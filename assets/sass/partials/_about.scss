@@ -1,59 +1,48 @@
 .about {
-  padding: 10rem 0;
-  #about_content{
+  padding: 13rem 0;
+  #about_content {
     align-items: center;
     .about_details {
-        padding-left: 5rem;
-    
-        #experience {
-            padding: 5rem 0 3rem 0;
-            .experience_icon {
-              width: 6rem;
-              height: 5.8rem;
-              background-color: $orange_light;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              border-radius: 0.6rem;
-              margin-right: 1rem;
-              img {
-                width: 3.5rem;
-                height: 3.5rem;
-              }
-            }
-            .experience_desc {
-              flex-direction: column;
-              .level_quantity {
-                color: $orange;
-                font-family: "Fira Sans";
-                font-weight: 700;
-                font-size: 21px;
-                line-height: 150%;
-              }
-            }
-            .col{
-                padding: 0 !important;
-                margin: 0 !important;
-            }
+      padding-left: 3rem;
+
+      #experience {
+        padding: 5rem 0 3rem 0;
+        .experience_icon {
+          width: 6rem;
+          height: 5.8rem;
+          background-color: $orange_light;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 0.6rem;
+          margin-right: 1rem;
+          img {
+            width: 3.5rem;
+            height: 3.5rem;
           }
-          #work_sample{
-            padding: 3rem 0 2rem 0;
-            .col{
-                margin: 0 !important;
-                padding: 0 !important;
-            }
-            .sample_item{
-                margin-bottom: 3rem;
-            }
-            .sample_icon{
-                width: 1.4rem;
-                height: 1.4rem;
-                margin-right: 1rem;
-              }
+        }
+        .experience_desc {
+          flex-direction: column;
+          .level_quantity {
+            color: $orange;
+            font-family: "Fira Sans";
+            font-weight: 700;
+            font-size: 21px;
+            line-height: 150%;
           }
-          
+        }
+        .col {
+          padding: 0 !important;
+          margin: 0 !important;
+        }
       }
+      #work_sample {
+        padding: 3rem 0 2rem 0;
+        .col {
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+      }
+    }
   }
-  
- 
 }

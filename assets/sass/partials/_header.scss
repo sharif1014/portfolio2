@@ -1,6 +1,8 @@
 .header {
   nav {
-    height: 10rem;
+    //height: 10rem;
+    align-items: center;
+    padding: 2rem 0;
   }
   .logo {
     width: 13.3rem;
@@ -9,19 +11,10 @@
       color: $text;
     }
   }
-
-  .hamburger {
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    display: none;
     .hamburger_icon {
       display: block;
-      width: 24px;
-      height: 2px;
+      width: 30px;
+      height: 3px;
       background-color: $heading;
       position: relative;
       transition: 0.3s ease-in-out;
@@ -33,11 +26,11 @@
         background-color: $heading;
         position: absolute;
         left: 0;
-        top: 6px;
+        top: 7px;
         transition: 0.3s ease-in-out;
       }
       &::before {
-        top: -6px;
+        top: -7px;
       }
     }
     .close {
@@ -45,17 +38,17 @@
       transition: 0.3s ease-in-out;
     }
     .close::after {
-      transform: rotate(45deg);
-      top: 0;
-      transition: 0.3s ease-in-out;
-    }
-    .close::before {
       transform: rotate(-45deg);
       top: 0;
       transition: 0.3s ease-in-out;
     }
-  }
-  .menu_links {
+    .close::before {
+      transform: rotate(45deg);
+      top: 0;
+      transition: 0.3s ease-in-out;
+    }
+
+  #menu_links {
     a {
       font-size: $font_small;
       color: $heading;
@@ -91,6 +84,8 @@
       .subtitle {
         margin: 2rem 0 5rem;
         padding-right: 7rem;
+        font-size: 1.8rem;
+        line-height: 3.1rem;
       }
     }
     .hero_img {

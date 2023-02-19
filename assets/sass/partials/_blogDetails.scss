@@ -1,0 +1,191 @@
+.blog_details_info {
+  margin: 5rem 0 2rem;
+  .blog_info_item {
+    &:last-child {
+      margin-left: 3.5rem;
+    }
+    .subtitle {
+      font-family: "Jost";
+      font-weight: 400;
+      margin: 0;
+    }
+    i {
+      color: $orange;
+      margin-right: 1rem;
+    }
+  }
+}
+
+.quote {
+  padding: 6.3rem 7.6rem;
+  background-color: $orange_light;
+  position: relative;
+  margin-top: 3.4rem;
+  margin-bottom: 10rem;
+  border-radius: .6rem;
+  .heading {
+    font-family: "Jost";
+    font-size: 2.1rem;
+    line-height: 3.4rem;
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+  }
+  .quote_img {
+    width: 2.827rem;
+    height: 2.249rem;
+    position: absolute;
+    left: 6.5%;
+    top: 12%;
+    margin-bottom: 3rem;
+  }
+  .author {
+    font-family: "Jost";
+    font-size: 2.1rem;
+    line-height: 3.4rem;
+    color: $orange;
+    margin-left: 3rem;
+    position: relative;
+    &::before {
+      content: "";
+      width: 2rem;
+      height: 0.2rem;
+      background-color: $orange;
+      position: absolute;
+      top: 50%;
+      left: -3rem;
+    }
+  }
+}
+#blog_desc {
+  margin-bottom: 6rem;
+}
+.ask_about_blog {
+  padding: 4rem 0;
+  align-items: center;
+  .like_container {
+    border: 0.1rem solid $orange_light;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    .subtitle {
+      margin: 0;
+      margin-left: 0.6rem;
+      transition: .4s ease-in-out;
+    }
+    i {
+      color: $orange;
+      transition: .4s ease-in-out;
+    }
+    &.dislike {
+      margin-left: 2.4rem;
+    }
+  }
+  .subtitle {
+    margin: 0;
+  }
+}
+.comments_area {
+  padding: 4rem 0;
+  .comment_item {
+    margin-top: 5rem;
+    &:nth-child(even) {
+      .comment_text {
+        padding-bottom: 3rem;
+        border-bottom: 0.1rem solid $orange_light;
+      }
+    }
+    &:nth-child(odd) {
+      border-bottom: 0.1rem solid $orange_light;
+      padding-left: 15rem;
+      .comment_text {
+        padding-bottom: 3rem;
+      }
+    }
+  }
+  .user_thumb {
+    width: 13.6rem;
+    height: 13.6rem;
+    margin-right: 2rem;
+  }
+  .comment_text {
+    .heading {
+      margin-bottom: 1rem;
+    }
+    span {
+      display: block;
+      width: 0.2rem;
+      height: 1.2rem;
+      background-color: $text;
+      margin: 0 1rem;
+      opacity: 0.5;
+    }
+    .subtitle {
+      margin: 0;
+    }
+    .comment {
+      margin: 3rem 0;
+    }
+    .like_container {
+      transition: .4s ease-in-out;
+      cursor: pointer;
+      &:first-child {
+        margin-right: 3rem;
+      }
+      .subtitle {
+        margin: 0;
+        transition: .4s ease-in-out;
+      }
+      i {
+        color: $orange;
+        margin-right: 0.5rem;
+        margin-top: 0.2rem;
+        transition: .4s ease-in-out;
+      }
+    }
+  }
+}
+
+.share_box {
+  border: 0.1rem solid $orange_light;
+  padding: 4.1rem 3rem;
+  margin: 6rem 0;
+  .share_icon {
+    cursor: pointer;
+    &:hover i{
+      transform: rotate(360deg);
+      color: $heading;
+  //transform: scale(1.1);
+    }
+    .subtitle {
+      margin: 0;
+      margin-left: 0.5rem;
+    }
+    i {
+      color: $orange;
+      margin-left: 2rem;
+      margin-top: 0.3rem;
+      padding: .3rem;
+      transition: .4s ease-in-out;
+    }
+  }
+  .share_text {
+    .subtitle {
+      margin: 0;
+    }
+  }
+}
+.replay {
+  margin-right: 2rem;
+  cursor: pointer;
+  .replay_icon {
+    width: 1.894rem;
+    height: 1.2rem;
+    margin-top: 0.3rem;
+    margin-right: 1rem;
+  }
+}
+.replay_section{
+  padding:5.3rem 0 6.5rem 10rem;
+  .btn_main{
+    width: fit-content;
+  }
+}

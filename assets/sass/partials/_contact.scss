@@ -1,0 +1,46 @@
+.contact_section {
+  padding: 6.5rem 0 13rem 0;
+  .form {
+    width: $full_width;
+    .btn_main {
+      margin-top: 3rem;
+    }
+  }
+  .getintouch{
+    padding-left: 4rem;
+    .address_item{
+        margin-bottom: 5rem;
+        h3{font-family: 'Jost';
+            margin: 0;
+            margin-bottom: .5rem;
+        }
+        p{
+            margin: 0;
+        }
+        .address_thumb {
+            width: 5.8rem;
+            height: 5.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $orange_light;
+            border-radius: 0.6rem;
+            margin-right: 2rem;
+            .location {
+              width: 2.767rem;
+              height: 3.4rem;
+            }
+            .phone {
+              width: 3.395rem;
+              height: 3.4rem;
+            }
+            .email {
+              width: 3.4rem;
+              height: 2.59rem;
+            }
+          }
+      }
+  }
+  
+  
+}

@@ -1,0 +1,32 @@
+.portfolio_section {
+  padding:6.5rem 0 13rem 0;
+  overflow-x: hidden;
+
+  .heading {
+    margin-bottom: 5rem;
+  }
+  .portfolio_item {
+    &.large_size {
+      width: 76rem;
+      height:43.6rem;
+    }
+    &.size_1 {
+      height:34.2rem;
+    }
+    &.size_2 {
+      height:44.2rem;
+    }
+    &.size_3 {
+      height:51.4rem;
+    }
+    &.size_4 {
+      height:37rem;
+    }
+    &.size_5 {
+      height:53.7rem;
+    }
+    img{
+      border-radius: .6rem;
+    }
+  }
+}
