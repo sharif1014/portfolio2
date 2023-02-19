@@ -202,7 +202,12 @@ color: $text;
   &:hover i{
 color: $heading !important;
   }
-  &:hover .subtitle{
-color: $orange;
+  &:hover{
+    .subtitle{
+      color: #45d345;
+        }
+    .dislike{
+      color: red;
+        }
   }
 }
