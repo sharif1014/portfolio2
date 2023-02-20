@@ -36,8 +36,8 @@
     itemSelector:".portfolio_item",
     percentPosition: true,
     masonry: {
-      columnWidth:1,
-    },
+      columnWidth: '.portfolio_item'
+    }
   })
 }
  //Owl carousel functionality
@@ -71,7 +71,7 @@
         items: 4,
       },
       1000: {
-        items:6 ,
+        items:6,
       },
     },
   });

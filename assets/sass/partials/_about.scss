@@ -1,28 +1,21 @@
 .about {
-  padding: 13rem 0;
-  #about_content {
-    align-items: center;
-    .about_details {
-      padding-left: 3rem;
-
-      #experience {
-        padding: 5rem 0 3rem 0;
-        .experience_icon {
-          width: 6rem;
-          height: 5.8rem;
-          background-color: $orange_light;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border-radius: 0.6rem;
-          margin-right: 1rem;
-          img {
-            width: 3.5rem;
-            height: 3.5rem;
-          }
+  padding:12.8rem 0 13rem;
+      .icon_thumb {
+        width: 6rem;
+        height: 5.8rem;
+        background-color: $orange_light;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.6rem;
+        margin-right: 1rem;
+        img {
+          width: 3.5rem;
+          height: 3.5rem;
         }
+      }
         .experience_desc {
-          flex-direction: column;
+          margin-bottom: 5rem;
           .level_quantity {
             color: $orange;
             font-family: "Fira Sans";
@@ -30,19 +23,18 @@
             font-size: 21px;
             line-height: 150%;
           }
+          .heading{
+            margin: 0;
+          }
         }
-        .col {
-          padding: 0 !important;
-          margin: 0 !important;
-        }
+      h2{
+        margin-bottom: 2rem;
+        text-align: left;
       }
-      #work_sample {
-        padding: 3rem 0 2rem 0;
-        .col {
-          margin: 0 !important;
-          padding: 0 !important;
-        }
-      }
-    }
+  p{
+    margin-bottom: 5rem;
+  }
+  .btn_main{
+    margin-top: 3rem;
   }
 }

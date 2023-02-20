@@ -75,112 +75,22 @@
     rgba(255, 234, 190, 0.3) 100%
   );
   position: relative;
-  .hero_content {
+
     .hero_text {
-      flex: 1.6;
-      padding: 10rem 0;
+      padding-top: 14.3rem;
       animation: hero_text 1500ms ease-in-out;
-      background: transparent;
       .subtitle {
-        margin: 2rem 0 5rem;
-        padding-right: 7rem;
-        font-size: 1.8rem;
-        line-height: 3.1rem;
+        padding-right: 4rem;
+        font-size: $font_medium;
+        line-height: 3.3rem;
+        margin-bottom: 5rem;
       }
     }
     .hero_img {
-      flex: 1;
-      position: relative;
       animation: hero_img 1000ms ease-in-out;
       animation-delay: 1000ms;
      
-      hr {
-        height: 3px;
-        opacity: 1;
-        z-index: -1;
-        position: absolute;
-        transform: rotate(40deg);
-        &:nth-child(2) {
-          color: $orange;
-          position: absolute;
-          top: 26%;
-          left: 55%;
-          width: 50%;
-        }
-        &:nth-child(3) {
-          color: $heading;
-          top: 33%;
-          left: 63%;
-          width: 32%;
-        }
-        &:nth-child(4) {
-          color: $orange;
-          top: 50%;
-          left: 85%;
-          width: 20%;
-        }
-        &:nth-child(5) {
-          color: $heading;
-          top: 24%;
-          left: 13%;
-          width: 55%;
-        }
-        &:nth-child(6) {
-          color: $heading;
-          top: 50%;
-          left: 72%;
-          width: 20%;
-        }
-
-        &:nth-child(7) {
-          color: $orange;
-          top: 25%;
-          left: 13%;
-          width: 34%;
-        }
-        &:nth-child(8) {
-          color: $heading;
-          top: 24%;
-          left: 0%;
-          width: 33%;
-        }
-        &:nth-child(9) {
-          color: $orange;
-          top: 57%;
-          left: 60%;
-          width: 40%;
-        }
-        &:nth-child(10) {
-          color: $orange;
-          top: 43%;
-          left: 8%;
-          width: 30%;
-        }
-        &:nth-child(11) {
-          color: $heading;
-          top: 46%;
-          left: 11%;
-          width: 10%;
-        }
-        &:nth-child(12) {
-          color: $heading;
-          top: 56%;
-          left: 25%;
-          width: 20%;
-        }
-        &:nth-child(13) {
-          color: $heading;
-          top: 54%;
-          left: 14%;
-          width: 14%;
-        }
-      }
-      img {
-        z-index: 1;
-       
-      }
     }
-  }
   .frame1{
     width: 11.3rem;
     height: 11.4rem;
@@ -199,8 +109,11 @@
     width: 10.1rem;
     height: 10.1rem;
     position: absolute;
-    top:82%;
-    left: 32%;
+    top:78%;
+    left: 34%;
+  }
+  .col{
+    padding: 0 !important;
   }
 }
 @keyframes hero_text {

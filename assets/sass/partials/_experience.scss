@@ -1,91 +1,89 @@
-//@import "variable";
-
 .experience_section {
   padding: 13rem 0;
   background-color: $orange_light;
-  .experience_desc {
-    margin-top: 5rem;
-    .experience_steps {
-      .experience_step {
-        align-items: center;
-        width: $full_width;
-        background-color: $white;
-        margin-bottom: 2rem;
-        margin-left: 5rem;
-        .step_item {
-          padding: 3.4rem 2rem 1rem;
-          position: relative;
-          .v_line {
-            color: $text;
-            width: 30%;
-            height: 0.1rem;
-            background-color: $text;
-            transform: rotate(90deg);
-            position: absolute;
-            right: -15%;
-            top: 55%;
-            opacity: 0.3;
-          }
-          &.padding_right {
-            padding: 3.4rem 2rem;
-            padding-right: 2rem;
-          }
-          &.padding_left {
-            padding-left: 3.4rem 2rem;
-          }
-          &.padding_both {
-            padding: 3.4rem 2rem;
-          }
-
-          .heading {
-            line-height: 2rem;
-            color: #000000;
-            margin-bottom: 1rem;
-          }
-          .subtitle {
-            margin: 0;
-            &.time_period {
-              margin-bottom: 1rem;
-            }
-          }
-          .skill_field {
-            width: 90%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0;
-          }
-        }
-      }
-      h3 {
-        width: 13%;
-        position: relative;
-        &::after {
-          content: "";
-          width: 2rem;
-          height: 2rem;
-          background-color: $orange;
-          border-radius: 50%;
-          position: absolute;
-          top: 0.7rem;
-          left: -22%;
-        }
-      }
-      
+  h3 {
+    width: 13%;
+    position: relative;
+    margin-bottom: 0;
+    &::after {
+      content: "";
+      width: 2rem;
+      height: 2rem;
+      background-color: $orange;
+      border-radius: 50%;
+      position: absolute;
+      top: 0.7rem;
+      left: -22.5%;
+    }
+  }
+  .experience_step {
+    align-items: center;
+    width: $full_width;
+    background-color: $white;
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+    
+  }
+  .step_item {
+    padding: 3.4rem 2rem 1rem;
+    position: relative;
+   
+    &.padding_right {
+      padding: 3.4rem 2rem;
+      padding-right: 2rem;
+    }
+    &.padding_left {
+      padding-left: 3.4rem 2rem;
+    }
+    &.padding_both {
+      padding: 3.4rem 2rem;
     }
 
-    .vertical_row {
-      width: 0.3rem;
-      height: 60rem;
-      background-color: #929292;
-      margin-left: 1rem;
-      margin-right: 1.5rem;
+    .heading {
+      line-height: 2rem;
+      color: #000000;
+      margin-bottom: 1rem;
+    }
+    
+  }
+  .subtitle {
+    margin: 0;
+    &.time_period {
+      margin-bottom: 2rem;
+    }
+  }
+  .v_line {
+    color: $text;
+    width: 45%;
+    height: 0.1rem;
+    border: none;
+    background-color: $text;
+    position: absolute;
+    right: -24%;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(90deg);
+    opacity: 0.3;
+    
+  }
+  .skill_field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  } 
+  .vertical_row {
+    width: 0.2rem;
+    height: 64.8rem;
+    background-color: #929292;
+    margin-right: 1.5rem;
+    padding: 1px;
+  }
+  .time_period {
+    hr {
+      flex: 1;
+      margin: 0 1rem;
     }
   }
 }
-.time_period {
-  hr {
-    flex: 1;
-    margin: 0 1.5rem;
-  }
-}
+
