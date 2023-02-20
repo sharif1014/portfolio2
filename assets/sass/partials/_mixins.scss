@@ -1,4 +1,10 @@
 @media screen and (max-width:768px){
+    .col-lg-11{
+        padding-left: 0 !important;
+       } 
+       .blog_desc_img{
+        margin-bottom: 5rem;
+       }
     .blog_desc{
         >.heading{
             font-size: 3rem;
@@ -6,14 +12,6 @@
             margin-bottom: 3rem;
         }
     }
-    .comments_area {
-        .comment_item {
-          &:nth-child(odd) {
-            padding-left: 0;
-          }
-        }
-        
-        }
         .replay_section{
             padding:5.3rem 0 6.5rem 1rem;
           }
@@ -24,10 +22,6 @@
             top: 4%;
             margin-bottom: 0;
           }
-      }
-    #work_sample{
-        padding-left:1rem;
-        margin-top: 5rem !important;
       }
     #menu_links {
         padding: 2rem;
@@ -128,6 +122,7 @@
  } 
 }
 @media screen and (max-width:400px){
+    
     .blog_desc{
         >.heading{
             font-size: 2rem;

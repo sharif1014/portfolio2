@@ -106,6 +106,23 @@
     height: 13.6rem;
     margin-right: 2rem;
   }
+  .like_container {
+    transition: .4s ease-in-out;
+    cursor: pointer;
+    &:first-child {
+      margin-right: 3rem;
+    }
+    .subtitle {
+      margin: 0;
+      transition: .4s ease-in-out;
+    }
+    i {
+      color: $orange;
+      margin-right: 0.5rem;
+      margin-top: 0.2rem;
+      transition: .4s ease-in-out;
+    }
+  }
  .col-lg-11{
   padding-left: 6rem;
  } 
@@ -131,23 +148,7 @@
   }
 }
 
-.like_container {
-  transition: .4s ease-in-out;
-  cursor: pointer;
-  &:first-child {
-    margin-right: 3rem;
-  }
-  .subtitle {
-    margin: 0;
-    transition: .4s ease-in-out;
-  }
-  i {
-    color: $orange;
-    margin-right: 0.5rem;
-    margin-top: 0.2rem;
-    transition: .4s ease-in-out;
-  }
-}
+
 .share_box {
   border: 0.1rem solid $orange_light;
   padding: 4.1rem 3rem;
