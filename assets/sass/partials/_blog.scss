@@ -6,7 +6,7 @@
         border: none;
        .card-body{
         margin-top: 3rem;
-        padding: 0 3rem;
+        padding-left:3rem;
         
        }
        
@@ -38,4 +38,7 @@
             color: $heading;
          }
       }
+}
+.pagination{
+    margin-top: 5rem !important;
 }
