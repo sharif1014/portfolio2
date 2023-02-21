@@ -1,3 +1,32 @@
+@media screen and (min-width:1300px){
+    .hero_text {
+        width: 74rem !important;
+       h1{
+        font-size: 8.5rem;
+       }
+      }
+      .work_desc{
+        .col-md-6{
+          padding-left: 0 !important;
+        }
+      }
+}
+@media screen and (min-width:992px){
+    .hero_text { 
+        width: 65rem !important;
+       h1{
+        font-size: 7.5rem;
+        line-height: 8rem;
+       }
+      }
+      .frame1{
+        width: 6rem !important;
+        height: 6rem !important;
+        position: absolute;
+        top: 12% !important;
+        left: 4%;
+      }
+}
 @media screen and (max-width:768px){
     .col-lg-11{
         padding-left: 0 !important;
@@ -39,7 +68,7 @@
         flex-direction: column;
      flex-flow:column-reverse;
      .hero_text{
-        flex: 1;
+       margin-bottom: 5rem;
      }
      .frame1 {
         top: 2%;

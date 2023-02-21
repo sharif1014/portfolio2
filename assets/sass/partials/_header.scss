@@ -75,8 +75,8 @@
     rgba(255, 234, 190, 0.3) 100%
   );
   position: relative;
-
     .hero_text {
+      width: 81.1rem;
       padding-top: 14.3rem;
       animation: hero_text 1500ms ease-in-out;
       .subtitle {
@@ -89,7 +89,6 @@
     .hero_img {
       animation: hero_img 1000ms ease-in-out;
       animation-delay: 1000ms;
-     
     }
   .frame1{
     width: 11.3rem;
