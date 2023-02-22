@@ -76,7 +76,7 @@
   );
   position: relative;
     .hero_text {
-      width: 81.1rem;
+      //width: 81.1rem;
       padding-top: 14.3rem;
       animation: hero_text 1500ms ease-in-out;
       .subtitle {
@@ -84,6 +84,7 @@
         font-size: $font_medium;
         line-height: 3.3rem;
         margin-bottom: 5rem;
+        text-align: left;
       }
     }
     .hero_img {
